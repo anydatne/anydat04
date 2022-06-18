@@ -1,0 +1,38 @@
+*{
+    padding:0;
+    margin:0;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background:rgb(151, 245, 229);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#content {
+    position: relative;
+    width: 474px;
+    height: 545px;
+}
+#content .black ,#content .front {
+    position:absolute;
+    width: 474px;
+    height: 545px;
+}
+
+# content .front {
+    border-bottom:5px solid aqua;
+    height: 0px;
+    animation:animate 2s infinite alternate;
+    overflow: hidden;
+}
+@keyframes animate {
+    0%{
+        height: 0px;
+    }
+    100%{
+        height: 540px;
+    }
+    
+}
